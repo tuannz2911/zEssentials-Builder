@@ -21,6 +21,10 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+
+    - name: Build with Gradle
+      run: chmod 777 *
+      
     # Build the project
     - name: Build with Gradle
       run: ./gradlew clean build
